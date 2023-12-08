@@ -15,7 +15,7 @@ and an integer bufferSize. The function should return a Stream<List<int>>
 where each emitted list contains up to bufferSize elements from the input stream.
  */
 
-bufferStream(Stream<int> input, int bufferSize) async* {
+Stream<List<int>> bufferStream(Stream<int> input, int bufferSize) async* {
   List<int> indivList = [];
   int chunkCounter = 0;
   
